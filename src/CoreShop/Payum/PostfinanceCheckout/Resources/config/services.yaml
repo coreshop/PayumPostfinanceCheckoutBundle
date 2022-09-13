@@ -1,0 +1,20 @@
+services:
+    CoreShop\Payum\PostfinanceCheckoutBundle\Form\Type\PostfinanceCheckoutType:
+        tags:
+            - { name: coreshop.gateway_configuration_type, type: postfinance_checkout }
+            - { name: form.type }
+
+    payum.postfinance_checkout_gateway_factory:
+        class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
+        arguments: [Wvision\Payum\PostFinanceCheckout\PostFinanceCheckoutGatewayFactory]
+        tags:
+            - { name: payum.gateway_factory_builder, factory: postfinance_checkout }
+
+    CoreShop\Payum\PostfinanceCheckoutBundle\Action\PrepareTransactionAction:
+        public: true
+        tags:
+            - {
+                name: payum.action,
+                factory: postfinance_checkout,
+                alias: coreshop.postfinance_checkout.prepare_transaction
+            }

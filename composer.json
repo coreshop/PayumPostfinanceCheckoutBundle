@@ -1,0 +1,49 @@
+{
+  "name": "coreshop/payum-postfinance-checkout-bundle",
+  "type": "pimcore-bundle",
+  "description": "CoreShop - PostFinance Checkout Bundle",
+  "keywords": [
+    "coreshop",
+    "pimcore",
+    "ecommerce",
+    "postfinance"
+  ],
+  "homepage": "http://www.coreshop.org",
+  "license": "GPL-3.0-or-later",
+  "authors": [
+    {
+      "name": "w-vision AG Aaron Gerig",
+      "email": "a.gerig@w-vision.ch",
+      "homepage": "http://www.w-vision.ch",
+      "role": "Developer"
+    },
+    {
+      "name": "Dominik Pfaffenbauer",
+      "email": "dominik@pfaffenbauer.at",
+      "homepage": "https://www.pfaffenbauer.at/",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": "^8.0",
+    "w-vision/payum-postfinance-checkout": "~1.0.0"
+  },
+  "config": {
+    "bin-dir": "bin"
+  },
+  "autoload": {
+    "psr-4": {
+      "CoreShop\\Payum\\PostfinanceCheckoutBundle\\": "src/CoreShop/Payum/PostfinanceCheckout"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.0-dev"
+    },
+    "pimcore": {
+      "bundles": [
+        "CoreShop\\Payum\\PostfinanceCheckoutBundle\\PostfinanceCheckoutBundle"
+      ]
+    }
+  }
+}
