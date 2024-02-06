@@ -1,6 +1,6 @@
 # CoreShop Postfinance Checkout Payum Connector
 This Bundle activates the Postfinance Checkout PaymentGateway in CoreShop.
-It requires the [w-vision/payum-postfinance-chekcout](https://github.com/w-vision/payum-postfinance-checkout) repository,
+It requires the [instride/payum-postfinance-chekcout](https://github.com/instride-ch/payum-postfinance-checkout) repository,
 which will be installed automatically.
 
 ## Installation
