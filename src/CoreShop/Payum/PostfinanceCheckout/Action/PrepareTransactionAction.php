@@ -28,7 +28,7 @@ use Payum\Core\Exception\RequestNotSupportedException;
 use PostFinanceCheckout\Sdk\Model\AddressCreate;
 use PostFinanceCheckout\Sdk\Model\LineItemCreate;
 use PostFinanceCheckout\Sdk\Model\LineItemType;
-use Wvision\Payum\PostFinanceCheckout\Request\PrepareTransaction;
+use Instride\Payum\PostFinanceCheckout\Request\PrepareTransaction;
 
 class PrepareTransactionAction implements ActionInterface
 {

@@ -2,7 +2,7 @@ services:
 
     payum.postfinance_checkout_gateway_factory:
         class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
-        arguments: [Wvision\Payum\PostFinanceCheckout\PostFinanceCheckoutGatewayFactory]
+        arguments: [Instride\Payum\PostFinanceCheckout\PostFinanceCheckoutGatewayFactory]
         tags:
             - { name: payum.gateway_factory_builder, factory: postfinance_checkout }
 
